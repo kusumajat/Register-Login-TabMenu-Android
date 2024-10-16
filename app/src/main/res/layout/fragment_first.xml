@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Phone"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/terms_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="By checking the box you agree to our "
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/terms_and_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="17dp"
+            android:text="Terms and Conditions."
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="11sp"
+            android:layout_gravity="start" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</FrameLayout>
